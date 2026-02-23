@@ -1,0 +1,45 @@
+.contact-grid{
+  grid-template-columns:1.05fr .95fr;
+}
+
+.contact-section .field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-top:12px;
+}
+
+.contact-section input,
+.contact-section textarea{
+  padding:12px;
+  border-radius:14px;
+  border:1px solid rgba(163,184,208,.14);
+  background:rgba(12,22,34,.88);
+  color:var(--text);
+  transition:border-color .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder{
+  color:#6f849f;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus{
+  outline:none;
+  border-color:rgba(96,165,250,.34);
+  box-shadow:0 0 0 4px rgba(96,165,250,.12);
+  background:rgba(14,25,39,.92);
+}
+
+.contact-section textarea{
+  min-height:120px;
+  resize:vertical;
+}
+
+.contact-section .btn-row{
+  display:flex;
+  gap:12px;
+  margin-top:14px;
+}
+

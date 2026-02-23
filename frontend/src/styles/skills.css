@@ -1,0 +1,8 @@
+.skills-section .tags{
+  align-items:flex-start;
+}
+
+.skills-section .card{
+  min-height:100%;
+}
+

@@ -1,0 +1,58 @@
+/* Keep project cards aligned even if summary text length changes */
+.project{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  border-color:rgba(96,165,250,.20);
+}
+
+.project .project-head{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+
+.project .project-head > div{
+  flex:1 1 100%;
+  min-width:0;
+}
+
+.project .meta{
+  display:flex;
+  flex-wrap:nowrap;
+  gap:8px;
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+
+.project .meta::-webkit-scrollbar{
+  display:none;
+}
+
+.project .meta .pill{
+  white-space:nowrap;
+  padding:6px 10px;
+  font-size:12px;
+  color:#bfd0e7;
+}
+
+.project .project-head > .pill{
+  flex:0 0 auto;
+}
+
+.project p{
+  line-height:1.45;
+  color:#d3def0;
+}
+
+.project .list li{
+  padding:9px 10px;
+}
+
+.project .hero-actions{
+  margin-top:auto;
+  padding-top:10px;
+}
+
